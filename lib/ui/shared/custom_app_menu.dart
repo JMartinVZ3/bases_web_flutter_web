@@ -26,7 +26,6 @@ class _TabletDesktopMenu extends StatelessWidget {
         children: [
           CustomFlatButton(
             text: 'Contador Stateful',
-            //onPressed: () => Navigator.pushNamed(context, '/stateful'),
             onPressed: () =>
                 locator<NavigationService>().navigateTo('/stateful'),
             color: Colors.black,
@@ -34,7 +33,6 @@ class _TabletDesktopMenu extends StatelessWidget {
           SizedBox(width: 10),
           CustomFlatButton(
             text: 'Contador Provider',
-            //onPressed: () => Navigator.pushNamed(context, '/provider'),
             onPressed: () =>
                 locator<NavigationService>().navigateTo('/provider'),
             color: Colors.black,
@@ -42,8 +40,20 @@ class _TabletDesktopMenu extends StatelessWidget {
           SizedBox(width: 10),
           CustomFlatButton(
             text: 'Otra pagina',
-            //onPressed: () => Navigator.pushNamed(context, '/otro'),
             onPressed: () => locator<NavigationService>().navigateTo('/otro'),
+            color: Colors.black,
+          ),
+          SizedBox(width: 10),
+          CustomFlatButton(
+            text: 'Stateful 100',
+            onPressed: () =>
+                locator<NavigationService>().navigateTo('/stateful/100'),
+            color: Colors.black,
+          ),
+          CustomFlatButton(
+            text: 'Provider 200',
+            onPressed: () =>
+                locator<NavigationService>().navigateTo('/provider?q=200'),
             color: Colors.black,
           ),
         ],
@@ -63,7 +73,6 @@ class _MobileMenu extends StatelessWidget {
         children: [
           CustomFlatButton(
             text: 'Contador Stateful',
-            //onPressed: () => Navigator.pushNamed(context, '/stateful'),
             onPressed: () =>
                 locator<NavigationService>().navigateTo('/stateful'),
             color: Colors.black,
@@ -71,7 +80,6 @@ class _MobileMenu extends StatelessWidget {
           SizedBox(width: 10),
           CustomFlatButton(
             text: 'Contador Provider',
-            //onPressed: () => Navigator.pushNamed(context, '/provider'),
             onPressed: () =>
                 locator<NavigationService>().navigateTo('/provider'),
             color: Colors.black,
@@ -79,8 +87,20 @@ class _MobileMenu extends StatelessWidget {
           SizedBox(width: 10),
           CustomFlatButton(
             text: 'Otra pagina',
-            //onPressed: () => Navigator.pushNamed(context, '/otro'),
             onPressed: () => locator<NavigationService>().navigateTo('/otro'),
+            color: Colors.black,
+          ),
+          SizedBox(width: 10),
+          CustomFlatButton(
+            text: 'Stateful 100',
+            onPressed: () =>
+                locator<NavigationService>().navigateTo('/stateful/100'),
+            color: Colors.black,
+          ),
+          CustomFlatButton(
+            text: 'Provider 200',
+            onPressed: () =>
+                locator<NavigationService>().navigateTo('/provider?q=200'),
             color: Colors.black,
           ),
         ],
